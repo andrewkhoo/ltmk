@@ -15,3 +15,4 @@ public_ftp/
 
 # ignore hugo stuff
 .hugo_build.lock
+
