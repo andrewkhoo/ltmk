@@ -1,0 +1,14 @@
+# more examples at https://github.com/github/gitignore
+
+# ignore the bane of all OSX existance
+.DS_Store
+
+# ignore log files and stats folders
+logs/
+stats/
+
+# ignore FTP inbound
+public_ftp/
+
+# don't ignore the main readme
+!README.md
