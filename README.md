@@ -8,9 +8,12 @@ cd ~/src
 hugo new site ltmk
 cd ltmk
 git init
+
 git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
 echo "theme = 'ananke'" >> hugo.toml
-hugo server
+or
+git submodule add -b main https://github.com/nunocoracao/blowfish.git themes/blowfish
+echo "theme = 'blowfish'" >> hugo.toml
 
 hugo new content content/posts/helloworld.md
 echo "baseURL = 'https://foobar.org/'" >> hugo.toml
