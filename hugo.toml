@@ -1,6 +1,6 @@
 baseURL = 'https://andrewkhoo.net/'
 languageCode = 'en-us'
-title = 'Letter to my Kids'
+title = 'Letters to my Kids'
 theme = 'ananke'
 
 [caches]
