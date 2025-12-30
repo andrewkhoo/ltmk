@@ -1,5 +1,8 @@
 # ltmk
 
+for date use:
+date +"%Y-%m-%dT%T+10:00"
+
 to build:
 brew install hugo
 hugo version
