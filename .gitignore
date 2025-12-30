@@ -12,3 +12,6 @@ public_ftp/
 
 # don't ignore the main readme
 !README.md
+
+# ignore hugo stuff
+.hugo_build.lock
