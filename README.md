@@ -1,5 +1,31 @@
 # ltmk
 
+to build:
+brew install hugo
+hugo version
+
+cd ~/src
+hugo new site ltmk
+cd ltmk
+git init
+git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+echo "theme = 'ananke'" >> hugo.toml
+hugo server
+
+hugo new content content/posts/helloworld.md
+echo "baseURL = 'https://foobar.org/'" >> hugo.toml
+echo "languageCode = 'en-us'" >> hugo.toml
+echo "title = 'Hello World'" >> hugo.toml
+echo "theme = 'ananke'" >> hugo.toml
+hugo server --buildDrafts (or -D)
+
+git add *
+git commit 
+git remote add origin https://github.com/username/new_repo
+git push -u origin main
+
+hugo   # writes out to public/
+
 /domains/telstramedia.net/public_html --> ~/src/html
 
 https://my.silicomnetwork.com/index.php?fuse=home&view=dashboard
